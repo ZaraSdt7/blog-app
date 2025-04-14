@@ -19,4 +19,9 @@ export class UpdateUserDto {
     @IsOptional()
     @MinLength(6)
     password?: string;
+
+    @ApiProperty({ description: "Profile picture", required: false })
+    @IsOptional()
+    profilePicture?: string | null;
+
 }
