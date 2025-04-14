@@ -15,7 +15,7 @@ A full-featured RESTful Blog API built with **NestJS**, **MongoDB**, and **Mongo
 - 📚 API documentation using Swagger
 - 📦 Environment configuration with dotenv
 - 🧱 Modular, scalable code structure
-- 🌐 Ready for Docker (optional)
+
 
 ---
 
