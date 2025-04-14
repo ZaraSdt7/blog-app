@@ -1,8 +1,7 @@
-import { MongooseModuleOptions } from "@nestjs/mongoose";
+import { JwtModuleOptions } from "@nestjs/jwt";
 import { ConfigService } from "./config.service";
 
-export const databaseConfig = (
-    configService: ConfigService,
-): MongooseModuleOptions => ({
-    uri: configService.mongoUri,
+export const jwtConfig = (configService: ConfigService): JwtModuleOptions => ({
+    secret: configService.jwtSecret,
+    signOptions: { expiresIn: "1d" },
 });

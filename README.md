@@ -19,44 +19,6 @@ A full-featured RESTful Blog API built with **NestJS**, **MongoDB**, and **Mongo
 
 ---
 
-## 📁 Project Structure
-
-```
-src/
-│
-├── posts/                  # Blog post module
-│   ├── schemas/            # Mongoose schemas
-│   ├── dto/                # Data Transfer Objects
-│   ├── posts.module.ts
-│   ├── posts.controller.ts
-│   └── posts.service.ts
-│
-├── comments/               # Comment module
-│   ├── schemas/
-│   ├── dto/
-│   ├── comments.module.ts
-│   ├── comments.controller.ts
-│   └── comments.service.ts
-│
-├── auth/                   # Authentication module
-│   ├── auth.module.ts
-│   ├── auth.controller.ts
-│   ├── auth.service.ts
-│   └── jwt.strategy.ts
-│
-├── users/                  # User module
-│   ├── schemas/
-│   ├── dto/
-│   ├── users.module.ts
-│   ├── users.controller.ts
-│   └── users.service.ts
-│
-├── app.module.ts           # Root module
-├── main.ts                 # App entry point
-└── ...
-```
-
----
 
 ## 🛠️ Technologies Used
 

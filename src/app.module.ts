@@ -2,7 +2,8 @@ import { Module } from "@nestjs/common";
 import { ConfigModule } from "./modules/database/config.module";
 import { MongooseModule } from "@nestjs/mongoose";
 import { ConfigService } from "./modules/database/config.service";
-import { databaseConfig } from "./modules/database/jwt-config";
+import databaseConfig from "./modules/database/database.config";
+
 
 @Module({
   imports: [
