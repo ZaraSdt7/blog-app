@@ -109,14 +109,6 @@ After starting the app, open [http://localhost:3000/api](http://localhost:3000/a
 
 ---
 
-## 🚀 Coming Soon
-
-- 🧪 Integration testing with MongoMemoryServer
-- 🐳 Docker support
-- 📩 Email verification
-- 🛡️ Role-based access control
-
----
 
 ## 🤝 Contributing
 
