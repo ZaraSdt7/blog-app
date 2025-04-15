@@ -77,7 +77,7 @@ export class CommentsService {
             throw new NotFoundException("Comment not found");
         }
 
-        // just user can update their own comment
+        // just user admin can update their own comment
         if (comment._id !== user.id && user.role !== UserRole.ADMIN) {
             throw new UnauthorizedException(
                 "You are not allowed to update this comment",
@@ -102,7 +102,7 @@ export class CommentsService {
             throw new NotFoundException("Comment not found");
         }
 
-        // just user can delete their own comment
+        // just user admin can delete their own comment
         if (comment._id !== user.id && user.role !== UserRole.ADMIN) {
             throw new UnauthorizedException(
                 "You are not allowed to delete this comment",
