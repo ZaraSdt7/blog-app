@@ -63,7 +63,7 @@ export class UsersService {
     ): Promise<User> {
         // just user can update their own profile
         if (
-            requester.id.toString() !== id && requester.role !== UserRole.ADMIN
+            requester.id !== id && requester.role !== UserRole.ADMIN
         ) {
             throw new UnauthorizedException(
                 "You are not allowed to update this user",
